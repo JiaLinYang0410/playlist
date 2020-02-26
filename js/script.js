@@ -1,24 +1,33 @@
-songName = []
-songName.forEach(function(){
+let songName = []
+let songArtist = []
+let songLength = []
+let image = []
+let link = []
 
-}
+$("#add").click(function(){
+    songArtist.push($("#artist").val());
+    songArtist.forEach(function(artist){
+        $("#artists").append(artist);
+    })
 
-songArtist = []
-songArtist.forEach(function(){
+    songName.push($("#song").val());
+    songName.forEach(function(song){
+        $("#songs").append(song);
+    })
 
-}
+    songLength.push($("#length").val());
+    songLength.forEach(function(length){
+        $("#lengths").append(length);
+    })
 
-songLength = []
-songLength.forEach(function(){
+    image.push($("#images").val());
+    image.forEach(function(picture){
+        $("#images").append(picture);
+    })
 
-}
+    link.push($("#link").val());
+    link.forEach(function(links){
+        $("#links").append(links);
+    })
+})
 
-image = []
-image.forEach(function(){
-
-}
-
-link = []
-link.forEach(function(){
-
-}
